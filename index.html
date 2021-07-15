@@ -108,6 +108,11 @@
 
         <audio id="sound1" src="toggle.mp3" preload="auto"></audio>
 
+        <script>
+          var audio = document.getElementById("sound1");
+          audio.volume = 0.02;
+        </script>
+
         <button class="button button1" onclick="document.getElementById('sound1').play();">Toggle</button>
     </fieldset>
     

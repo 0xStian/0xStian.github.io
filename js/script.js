@@ -11,13 +11,13 @@ particlesJS("particles-js", {
             "value": "#000000"
         },
         "shape": {
-            "type": "edge",
+            "type": "circle",
             "stroke": {
                 "width": 0,
                 "color": "#ff0000"
             },
             "polygon": {
-                "nb_sides": 12
+                "nb_sides": 100
             },
             "image": {
                 "src": "img/github.svg",
@@ -49,14 +49,14 @@ particlesJS("particles-js", {
             "enable": true,
             "distance": 150,
             "color": "#00FFFF",
-            "opacity": 0.4,
+            "opacity": 0.6,
             "width": 0.6
         },
         "move": {
             "enable": true,
-            "speed": 5,
-            "direction": "bottom",
-            "random": true,
+            "speed": 4,
+            "direction": "right",
+            "random": false,
             "straight": false,
             "out_mode": "out",
             "bounce": false,
@@ -82,24 +82,25 @@ particlesJS("particles-js", {
         },
         "modes": {
             "grab": {
-                "distance": 292.34779642848423,
+                "distance": 220,
                 "line_linked": {
-                    "opacity": 1
+                    "opacity": 2
+            
                 }
             },
             "bubble": {
-                "distance": 400,
-                "size": 40,
-                "duration": 2,
-                "opacity": 8,
-                "speed": 3
+                "distance": 3000,
+                "size": 10,
+                "duration": 1,
+                "opacity": 1,
+                "speed": 10000
             },
             "repulse": {
-                "distance": 300,
-                "duration": 0.3
+                "distance": 150,
+                "duration": 0.5
             },
             "push": {
-                "particles_nb": 4
+                "particles_nb": 30
             },
             "remove": {
                 "particles_nb": 2
