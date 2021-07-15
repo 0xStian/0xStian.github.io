@@ -14,7 +14,7 @@ canvas {
 }
 
 .content{
-  position: fixed;
+  position: absolute;
   width: 100%;
   overflow: auto
 }
