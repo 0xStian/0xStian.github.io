@@ -60,11 +60,13 @@ h1{
 
 .picture{
      border-radius: 10px;
-     width: 20%
+     width: 20%;
+     box-shadow: 1px 1px 20px 0 #00FFFF, 20px 10px 20px 10px rgba(0, 0, 0, 0.19);
 }
 
 .nez{
   font-size: 600%;
+  text-shadow: #00ffff31 5px 5px 10px;;
 }
 .fa {
       padding: 20px;
