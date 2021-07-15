@@ -6,7 +6,7 @@ canvas {
 }
 
 #particles-js {
-  position : fixed;
+  position : absolute;
   width:100%;
   height:100%;
   z-index:-200;
@@ -61,6 +61,10 @@ h1{
 .picture{
      border-radius: 10px;
      width: 20%
+}
+
+.nez{
+  font-size: 600%;
 }
 .fa {
       padding: 20px;
