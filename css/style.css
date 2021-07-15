@@ -91,6 +91,214 @@ h1{
     }
 
 
+
+
+
+
+
+
+    .line-1{
+      position: center;
+      top: 20%;  
+      width: 24em;
+      margin: 0 auto;
+      border-right: 2px solid rgba(255,255,255,.75);
+      font-size: 400%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);    
+  }
+
+
+
+    .button {
+      border: none;
+      color: black;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 40px;
+      cursor: pointer;
+    }
+
+
+.button1 {
+  background-color: #00FFFF;
+  margin: -50px 50px;
+  }
+
+    #menu {
+      margin: 5% 80%;
+      position: absolute;
+      width: 212px;
+      height: 400px;
+      background-color: #282828;
+      box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      padding: 5px;
+  }
+  
+  .menuinside {
+      background-color: #111111;
+      width: 212px;
+      height: 400px;
+      margin: 0 auto;
+  }
+  
+  
+  fieldset {
+    width: 160px;
+    height: 390px;
+    border-color: #00ffbf;
+    float: left;
+}
+  
+  legend {
+      font-size: 10px; 
+      color: white;
+      font-family: Verdana;
+      
+  }
+  
+  .gradient_slider {
+      background: #00ffbf;
+      background-size: 1000% 1000%;
+      width: 210px;
+      height: 4px;
+      margin: 0 auto;
+        
+      animation: AnimationName 30s ease infinite;
+  }
+  
+  @keyframes AnimationName { 
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  
+  .smalltext {
+      font-size: 9px; 
+      color: white;
+      font-family: Verdana;
+      text-align: left;
+      margin-left: 27px;
+      margin-bottom: 7px;
+      padding-top: 5px;
+  }
+  
+  .control {
+      font-family: Verdana;
+      display: block;
+      position: relative;
+      margin-bottom: 7px;
+      margin-left: 45px;
+      padding-top: 2px;
+      color: white;
+      font-size: 9px;
+  }
+      .control input {
+          position: absolute;
+          z-index: -1;
+          opacity: 0;
+      }
+  .control_indicator {
+      position: absolute;
+      top: 3px;
+      right: 167px;
+      height: 9px;
+      width: 9px;
+      background: #474747;
+      border: 1px solid #000000;
+  }
+  .control-radio .control_indicator {
+      border-radius: undefined%;
+  }
+  
+  .control:hover input ~ .control_indicator,
+  .control input:focus ~ .control_indicator {
+      background: #474747;
+  }
+  
+  .control input:checked ~ .control_indicator {
+      background: #95C021;
+  }
+  .control:hover input:not([disabled]):checked ~ .control_indicator,
+  .control input:checked:focus ~ .control_indicator {
+      background: #95C021;
+  }
+  .control input:disabled ~ .control_indicator {
+      background: #e6e6e6;
+      opacity: 0.6;
+      pointer-events: none;
+  }
+  .control_indicator:after {
+      box-sizing: unset;
+      content: '';
+      position: absolute;
+      display: none;
+  }
+  .control input:checked ~ .control_indicator:after {
+      display: block;
+  }
+  .control-checkbox input:disabled ~ .control_indicator:after {
+      border-color: #7b7b7b;
+  }
+  
+  .select {
+      position: relative;
+      display: inline-block;
+      margin-bottom: 25px;
+      width: 100%;
+  }    .select select {
+          position: absolute;
+          left: 13%;
+          font-family: 'Verdana';
+          display: inline-block;
+          width: 75%;
+          cursor: pointer;
+          padding: 2px 5px;
+          outline: 0;
+          border: 1px solid #000000;
+          border-radius: 0px;
+          background: #232323;
+          color: #989898;
+          font-size: 9px;
+          appearance: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+      }
+          .select select::-ms-expand {
+              display: none;
+          }
+          .select select:hover,
+          .select select:focus {
+              color: #989898;
+              background: #232323;
+          }
+          .select select:disabled {
+              opacity: 1;
+              pointer-events: none;
+          }
+  .select_arrow {
+      position: absolute;
+      top: 5px;
+      right: 27px;
+      pointer-events: none;
+      border-style: solid;
+      border-width: 4px 4px 0px 4px;
+      border-color: #989898 transparent transparent transparent;
+  }
+  .select select:hover ~ .select_arrow,
+  .select select:focus ~ .select_arrow {
+      border-top-color: #989898;
+  }
+  .select select:disabled ~ .select_arrow {
+      border-top-color: #989898;
+  }
+
+
     
 
 
