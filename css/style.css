@@ -26,25 +26,68 @@ a:hover{
      -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
 }
 
+svg.sqsVideoBlockPlaceholder-play {
+    display: none;
+}
+
 
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */
 
-.projects {
+#ban{
+    margin: 200px 1435px;
+    position : fixed;
     border-radius: 10px;
-    position : absolute;
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 5px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: -20px 1px;
-    cursor: pointer;
-    background-color: #00FFFF;
-    box-shadow: 1px 1px 10px 0 #00FFFF, 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
-  }
+    width: 10%;
+    box-shadow: 1px 1px 20px 0 #ff0000, 20px 10px 20px 10px rgba(0, 0, 0, 0.19);
+}
+
+#eac{
+    margin: 120px 1215px;
+    position : fixed;
+    border-radius: 10px;
+    width: 10%;
+    box-shadow: 1px 1px 50px 0 #ff00008c, 20px 10px 20px 10px rgba(0, 0, 0, 0.19);
+    background-color: #000000;
+}
+
+
+    .projects {
+        border-radius: 10px;
+        position : absolute;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: -20px 1px;
+        cursor: pointer;
+        background-color: #00FFFF;
+        box-shadow: 1px 1px 10px 0 #00FFFF, 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
+      }
+
+      .ctfs {
+        border-radius: 10px;
+        position : fixed;
+        border: none;
+        color: rgb(0, 0, 0);
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: -20px 100px;
+        cursor: pointer;
+        background-color: #00FFFF;
+        box-shadow: 1px 1px 10px 0 #00FFFF, 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
+      }
+
+
+  
+
+
 
   .homepage {
     border-radius: 10px;
@@ -164,6 +207,21 @@ h1{
 
 
 
+        #menu {
+            margin: 10% 1200px;
+            position: absolute;
+            width: 212px;
+            height: 400px;
+            background-color: #282828;
+            box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 5px;
+        }
+
+
+      
+
+
+
 
 .button {
       border: none;
@@ -183,15 +241,7 @@ h1{
   margin: -50px 50px;
   }
 
-    #menu {
-      margin: 10% 1200px;
-      position: absolute;
-      width: 212px;
-      height: 400px;
-      background-color: #282828;
-      box-shadow: 0 4px 8px 0 #00FFFF, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      padding: 5px;
-  }
+
   
   .menuinside {
       background-color: #111111;

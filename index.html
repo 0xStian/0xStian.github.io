@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>  
+
+
       <title>Nez</title>
       <link rel="icon" href="favicon.ico" type="image/ico">
       <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" media="screen" href="css/style.css">
     </head>
 <body>
+
+
+  <script>
+    $(function() {
+    $("#ban").hide();
+    $("#eac").hide();
+    });
+     </script>
+
   <center>
 
 <div class="content">
@@ -21,7 +33,9 @@
 <br>
 <button onclick="document.location='projects.htm'" class="projects" >Projects</button>
 
+<button onclick="document.location='ctfs.htm'" class="ctfs" >CTFs</button>
 <img class="picture" src="https://cdn.discordapp.com/attachments/864291984697196564/864528491219386408/pf.png"/>
+
 
 <br><br><br>
 
@@ -57,7 +71,7 @@
     <div class="gradient_slider"></div>
     
     <fieldset>
-      <legend>Mcdonalds Mainframe Menu</legend>
+      <legend>Mcdonalds Cheat Menu</legend>
         <br>
         <label class="control control-checkbox">
           Food Progress ESP
@@ -116,12 +130,22 @@
           audio.volume = 0.02;
         </script>
 
-        <button class="button button1" onclick="document.getElementById('sound1').play();">Toggle</button>
+       
+        <button id="togglebutton" class="button button1" onclick="document.getElementById('sound1').play();"  onclick = "showDiv()">Toggle</button>
     </fieldset>
     
   </div>
 </div>
-
+<img id="ban" src="https://cdn.discordapp.com/attachments/864291984697196564/865581183789039626/unknown.png"/>
+<img id="eac" src="https://cdn.discordapp.com/attachments/864291984697196564/865581764847599616/image.png"/>
+<script>
+  $(function() {
+      $("#togglebutton").click(function() {
+          $("#ban").show();
+          $("#eac").show();
+      });
+  });
+</script>
 
 
 <div id="particles-js"></div> 
