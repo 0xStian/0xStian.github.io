@@ -42,11 +42,28 @@ a:hover{
     font-size: 16px;
     margin: -20px 1px;
     cursor: pointer;
+    background-color: #00FFFF;
+    box-shadow: 1px 1px 10px 0 #00FFFF, 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
+  }
+
+  .homepage {
+    border-radius: 10px;
+    position : fixed;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 690px;
+    cursor: pointer;
+    background-color: #00FFFF;
     box-shadow: 1px 1px 10px 0 #00FFFF, 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
   }
 
 
-.projects {background-color: #00FFFF;}
+
 
 /* -------------------------------------------------- */
 /* -------------------------------------------------- */
