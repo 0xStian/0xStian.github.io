@@ -68,7 +68,7 @@ svg.sqsVideoBlockPlaceholder-play {
 
       .ctfs {
         border-radius: 10px;
-        position : fixed;
+        position : absolute;
         border: none;
         color: rgb(0, 0, 0);
         padding: 5px 15px;
