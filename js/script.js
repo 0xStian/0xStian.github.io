@@ -72,11 +72,11 @@ particlesJS("particles-js", {
         "events": {
             "onhover": {
                 "enable": true,
-                "mode": "grab"
+                "mode": "none"
             },
             "onclick": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "grab"
             },
             "resize": true
         },
