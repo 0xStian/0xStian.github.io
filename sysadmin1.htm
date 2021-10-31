@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>  
+      <title font-size= 100 >Forensics/sysadmin1</title>
+      <link rel="icon" href="favicon.ico" type="image/ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="screen" href="css/style.css">
+    </head>
+<body>
+
+<center>
+<div class="content">
+
+    <header>
+        
+        <h1 style="font-size:60px">Forensics/sysadmin1 Writeup</h1>
+        <h2 style="color:#9c9c9c">Equinor 2021</h2>
+        
+    </header>
+    
+</div>
+</center>
+<br><br><br><br><br><br><br><br><br><br><br>
+<center>
+
+<br><br><br>
+<h2 style="color:#858585";>
+    The task was to unlock a Bitlocker protected drive.
+</h2>
+
+<br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904412753165430824/unknown.png">
+<br><br><br><br><br><br>
+
+<h2 style="color:#858585";>
+    Two files where provided. The Virtual Hard Drive file, and a list of possible passwords.
+</h2>
+
+<br><br><br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904417296490061876/unknown.png">
+<br><br><br><br><br><br>
+
+<h2 style="color:#858585";>
+    First step is to use the tool "bitlocker2john" to get the the crackable hash.
+</h2>
+
+<br><br><br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904421102799945821/unknown.png" width="500" height="150">
+<br><br><br><br><br><br>
+
+<h2 style="color:#858585";>
+    You should end up with some different Hashes. For this CTF i decided to use the "User Password Hash".
+</h2><br>
+<p style="color:#ffffff";> $bitlocker$0$16$877ac822ca83963fe55a44e603d9145c$1048576$12$c0bc89af7299d7010e000000$60$1d2401ad85ea51764a4b7f1d1f3420410b83739da773e502713debe1ffec0ebef53ae4d2130793891e133b210c9d65ed35cf2260ca8ce322a83714d9</p>
+
+<br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904425597382582352/image_4.jpg" width="500" height="150">
+<br><br><br><br><br><br>
+
+<h2 style="color:#858585";>
+    Next step is to crack the hash. I decided to use Hashcat for this. Run the command hashcat -m 22100 "hash file" "password list".
+</h2><br>
+
+<br><br><br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904434261854142575/image_6.jpg" width="1000" height="700">
+<br><br><br><br><br><br>
+
+<h2 style="color:#858585";>
+    Now that we know the password of the bitlocker protected file is "ayRTBNm6kWG28FZVDgzuwxfj", how do we unlock it?.
+    <br>
+    You first need to open "Disk Management" in windows. Then click "action" and press "Attach VHD".
+    <br>
+    Then you choose your disk and attach it.
+</h2><br>
+
+<br><br><br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904435063876366346/unknown.png">
+<br><br><br><br><br><br>
+
+<h2 style="color:#858585";>
+   Now you can interact with the drive on your machine. When you try to open it, you will be provided with a password prompt.
+</h2><br>
+
+<br><br><br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904436124607479898/unknown.png">
+<br><br><br><br><br><br>
+
+<h2 style="color:#858585";>
+    After typing in the password you should we able to open the drive and see the flag!
+ </h2><br>
+
+ <br><br><br><br><br><br>
+<img src="https://cdn.discordapp.com/attachments/894957297602801714/904436349157900388/unknown.png">
+<br><br><br>
+
+
+<h2 style="color:white">Written by Stian#8702 / EQ </h2>
+<br><br><br>
+</center>
+</body>
+</html> 

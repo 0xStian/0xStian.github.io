@@ -49,13 +49,13 @@ particlesJS("particles-js", {
             "enable": true,
             "distance": 150,
             "color": "#afffff",
-            "opacity": 0.6,
+            "opacity": 0.2,
             "width": 0.6
         },
         "move": {
             "enable": true,
-            "speed": 4,
-            "direction": "right",
+            "speed": 2,
+            "direction": "down",
             "random": false,
             "straight": false,
             "out_mode": "out",
