@@ -44,7 +44,7 @@ svg.sqsVideoBlockPlaceholder-play {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin: -20px 1px;
+        margin: 500px 1px;
         cursor: pointer;
         background-color: #008b17;
         box-shadow: 1px 1px 10px 0 #008b17, 10px 10px 10px 10px rgba(0, 0, 0, 0.19);
@@ -149,7 +149,6 @@ h1{
 .picture{
      border-radius: 10px;
      width: 20%;
-     box-shadow: 1px 1px 20px 0 #979797, 20px 10px 20px 10px rgba(0, 0, 0, 0.19);
 }
 
 .nez{
